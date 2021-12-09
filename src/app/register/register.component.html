@@ -1,0 +1,64 @@
+<div class="container-fluid" id="container">
+    <div class="row justify-content-center">
+        <div class="col-3 p-3">
+            <div class="d-flex justify-content-between">
+                <h1>Welcome to Craft and Chat</h1>
+                <!-- <div class="col-sm">
+                    <button class=" btn btn-dark" [routerLink]="['/login']">Go to Login</button>
+                </div> -->
+            </div>
+
+            <form (submit)="registerHandler( $event )">
+                <div>
+                    <label for="firstName"> First Name:</label>
+                    <input class="form-control" type="text" name="firstName" id="firstName"
+                        [(ngModel)]="newUser.firstName">
+                </div>
+                <div>
+                    <label for="lastName"> Last Name:</label>
+                    <input class="form-control" type="text" name="lastName" id="lastName"
+                        [(ngModel)]="newUser.lastName">
+                </div>
+                <div>
+                    <label for="email">
+                        Email:
+                    </label>
+                    <input class="form-control" type="email" name="email" id="email" [(ngModel)]="newUser.email" />
+                </div>
+
+                <div>
+                    <label for="password">
+                        Password:
+                    </label>
+                    <input class="form-control" type="password" name="password" id="password"
+                        [(ngModel)]="newUser.password" />
+                </div>
+                <div>
+                    <label for="confirmPassword">
+                        Confirm Password:
+                    </label>
+                    <input class="form-control" type="password" name="confirmPassword" id="confirmPassword"
+                        [(ngModel)]="newUser.confirmPassword" />
+                </div>
+                <button class="btn btn-dark mt-3" type="submit">
+                    Register
+                </button>
+                <div>
+                    {{errorMessage}}
+                </div>
+                {{newUser.firstName}}
+            </form>
+            <div>
+                <p class="pt-3"> Already have an account? <a [routerLink]="['/login']">Login</a></p>
+
+            </div>
+
+        </div>
+        <div class="col-6">
+            <img src="https://images.pexels.com/photos/6184425/pexels-photo-6184425.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"
+                alt="arts and crafts">
+        </div>
+
+    </div>
+
+</div>

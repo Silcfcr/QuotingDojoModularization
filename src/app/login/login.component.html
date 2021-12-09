@@ -1,0 +1,37 @@
+<div id="container" class="container-fluid">
+    <div class="row justify-content-center">
+        <div class="col-6">
+            <img src="https://images.pexels.com/photos/6184425/pexels-photo-6184425.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"
+                alt="arts and crafts">
+        </div>
+        <div class="col-3 p-3 justify-content-center">
+            <h1>Welcome to Craft and Chat</h1>
+            <form (submit)="loginHandler( $event )">
+                <div>
+                    <label for="loginEmail">
+                        Email:
+                    </label>
+                    <input class="form-control" type="text" name="loginEmail" id="loginEmail"
+                        [(ngModel)]="loginEmail" />
+                </div>
+                <div>
+                    <label for="loginPassword">
+                        Password:
+                    </label>
+                    <input class="form-control" type="password" name="loginPassword" id="loginPassword"
+                        [(ngModel)]="loginPassword" />
+                </div>
+                <button class="btn btn-dark mt-3" type="submit">
+                    Login
+                </button>
+                <div>
+                    <p class="pt-3"> Don't have an account? <a [routerLink]="['/register']">Register</a></p>
+
+                </div>
+                <div>
+                    {{errorMessage}}
+                </div>
+            </form>
+        </div>
+    </div>
+</div>

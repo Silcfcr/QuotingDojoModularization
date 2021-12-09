@@ -1,0 +1,49 @@
+<div class="container-fluid" id="container">
+    <div class="row d-flex justify-content-around" id="mainNav">
+        <div class="col-5">
+            <h1>Craft & Chat</h1>
+        </div>
+        <div class="col-5 flex-row">
+            <a class="mr-3" href="" [routerLink]="['/home']">Home</a>
+            <a class="mr-3" href="" [routerLink]="['/profile']">My profile</a>
+            <a class="mr-3" href="" (click)="logout()">Logout</a>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col align-items-center">
+            <img [routerLink]="['/chat/sewing']" class="chatIcon" src="../../assets/images/sewing-machine.png" alt="">
+            <p>Sewing</p>
+        </div>
+        <div class="col">
+            <img [routerLink]="['/chat/cooking']" class="chatIcon" src="../../assets/images/cooking.png" alt="">
+            <p>Cooking</p>
+        </div>
+        <div class="col">
+            <img [routerLink]="['/chat/pottery']" class="chatIcon" src="../../assets/images/pottery.png" alt="">
+            <p>Pottery</p>
+        </div>
+        <div class="col">
+            <img [routerLink]="['/chat/painting']" class="chatIcon" src="../../assets/images/paint-palette.png" alt="">
+            <p>Painting</p>
+        </div>
+        <div class="col">
+            <img [routerLink]="['/chat/woodwork']" class="chatIcon" src="../../assets/images/hand-saw.png" alt="">
+            <p>Wood work</p>
+        </div>
+        <div class="col">
+            <img [routerLink]="['/chat/kniting']" class="chatIcon" src="../../assets/images/yarn-ball.png" alt="">
+            <p>Crochet</p>
+        </div>
+    </div>
+    <div class="row mt-3">
+        <div class="">
+            <h3>What have you been up to? Let your friends know about your latest craft!</h3>
+        </div>
+    </div>
+    <div class="row mt-3">
+        <div class="">
+            <h3>Find out what's new!</h3>
+        </div>
+    </div>
+
+</div>

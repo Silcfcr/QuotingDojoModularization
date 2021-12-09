@@ -1,0 +1,30 @@
+<p>list works!</p>
+<h1>
+    Welcome to the socket io public chat application
+</h1>
+
+<form (submit)="sendMessage( $event )" class="messageForm">
+    <div>
+        <label for="userMessage">
+            Message:
+        </label>
+        <textarea id="userMessage"></textarea>
+    </div>
+    <button type="submit">
+        Send message
+    </button>
+</form>
+<!--
+<button class="broadCast">
+    Send message to all
+</button>
+-->
+<!-- <div class="messageBox">
+    <% if (messagesDB !=undefined) { %>
+        <% for (let i=0; i< messagesDB.length; i++) { %>
+            <p>
+                <%= messagesDB[i] %>
+            </p>
+            <% } %>
+                <% } %>
+</div> -->
